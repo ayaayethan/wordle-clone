@@ -1,1 +1,1 @@
-# worlde-clone
+# wordle-clone
