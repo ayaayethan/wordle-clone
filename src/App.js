@@ -1,9 +1,11 @@
 import React from 'react';
+import './styles.css';
+
 
 export function App() {
   return (
-    <div>
-      <h1>Welcome { new Date().toString()} </h1>
+    <div className="text-slate-50">
+      <h1> Wordle Clone </h1>
     </div>
   )
 }

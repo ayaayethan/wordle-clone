@@ -1,9 +1,10 @@
 const path = require('path');
 
 module.exports = {
+  entry: './src/index.js',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'index.bundle.js',
+    filename: 'bundle.js',
   },
   devServer: {
     port: 3000
@@ -18,11 +19,11 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/i,
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader'
+          'postcss-loader'
         ]
       }
     ]
